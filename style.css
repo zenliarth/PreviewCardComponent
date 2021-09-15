@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+html {
+  font-size: 62.5%;
+}
+html,
+p,
+h3,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+.app-container {
+  height: 98%;
+  background: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerMain {
+  width: 100%;
+  max-width: 1000px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.boxContainer {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  max-width: 1000px;
+  background: hsl(244, 38%, 16%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.box1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.box1 h1 {
+  font-family: 'Inter', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+}
+.box1 p {
+  font-family: 'Inter', sans-serif;
+  width: 90%;
+  font-size: 1.3rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.statics {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+.static1,
+.static2,
+.static3,
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+.box1 > div .static1 p,
+.box1 > div .static2 p,
+.box1 > div .static3 p {
+  margin: 5px 30px 0px 0px;
+  padding: 0px;
+  font-size: 1rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.boxContainer2 {
+  width: 50%;
+  max-width: 500px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.box2 {
+  width: 100%;
+  height: 100%;
+  background: hsl(277, 64%, 31%, 1);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.box2 img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .box1 h1 {
+    font-size: 2.5rem;
+  }
+  .box1 p {
+    font-size: 1.3rem;
+  }
+  .static1,
+  .static2,
+  .static3,
+  h3 {
+    font-size: 1.3rem;
+  }
+  .box1 > div .static1 p,
+  .box1 > div .static2 p,
+  .box1 > div .static3 p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  .box1 h1 {
+    font-size: 2rem;
+  }
+  .box1 p {
+    font-size: 1rem;
+  }
+  .box1 > div .static1 p,
+  .box1 > div .static2 p,
+  .box1 > div .static3 p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .app-container {
+    height: 100vh;
+  }
+  .containerMain {
+    width: 80%;
+    height: 80%;
+    margin: 10% 0px;
+    flex-direction: column;
+    background: hsl(233, 47%, 7%);
+  }
+  .boxContainer {
+    width: 100%;
+    text-align: center;
+    background: hsl(244, 38%, 16%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  .box1 p {
+    width: 100%;
+    line-height: 2rem;
+  }
+  .boxContainer2 {
+    order: -1;
+    width: 100%;
+    height: 35%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+  }
+  .box2,
+  .box2 img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+  }
+  .box1 > div .static1 p,
+  .box1 > div .static2 p,
+  .box1 > div .static3 p {
+    margin: 0px 20px 0px 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .statics {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .box1 {
+    margin-top: 10px;
+  }
+  .boxContainer2 {
+    height: 30%;
+  }
+}
